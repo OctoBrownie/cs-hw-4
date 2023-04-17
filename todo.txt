@@ -1,0 +1,22 @@
+StartPanel:
+	Clicking space/enter for the size -> change digit by digit
+
+AI:
+	See notes below
+
+
+
+
+I had an idea to implement different AIs with different algorithms and randomly pick
+one for the user to use. It would've been really funny to see people react to their AI
+doing really dumb things or not. The ideas I had were these:
+
+- random AI, so the one I've already implemented
+- myopic AI, which only checks for things in the immediate vicinity (for TAs and skills)
+- farsight AI, which would go for the closest skills to the instructor (minimize moves),
+	assuming it knew where the instructor was (hidden in the fog)
+- suicidal AI, which would seek out the nearest TA and run into them
+
+However... I didn't have time to implement them. I tried thinking about how exactly to do
+it, and I thought about cost functions to evaluate each move. Then we use the costs to 
+either just use the best one or as weights for a random decision.
